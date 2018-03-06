@@ -1,29 +1,57 @@
-# README #
+# COSC 6377 - Computer Networks (Project)
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Name: Hai-Y Michael Tran Nguyen
 
-### What is this repository for? ###
+UH email address: mhtran4@uh.edu
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+Your ID: 0925358
 
-### How do I get set up? ###
+## Implementation Details:
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+Server Component implemented using Python 2.7.12.
+Android Component implemented using C#/Xamarin.
 
-### Contribution guidelines ###
+## System Requirements
+	Raspberry Pi 2B
+		USB Webcam
+		VL53L0X Distance Sensor
+		Speaker
+	2 Windows Servers
+		Main Server
+		SQL Server
+	Android Phone and/or Emulator
 
-* Writing tests
-* Code review
-* Other guidelines
+## How to Run:
+For detailed instructions on how to setup this application - see report.pdf.
 
-### Who do I talk to? ###
+### On Server:
+	run ./Server/server.py
+	run ./Server/serverHTTP.py
 
-* Repo owner or admin
-* Other community or team contact
+### On Raspberry Pi:
+	run ./RaspberryPi/client.py -f <FACE_RECOGNITION_TYPE>
+<FACE_RECOGNITION_TYPE> = AWS or OPENCV
+
+### On Android:
+	Start "COSC6377 Project" Application
+
+## Limitations:
+
+This script requires you to be connected to the internet (on Server, Raspberry Pi, and Android) to run.
+
+## Required Stuff:
+
+### Server
+	AWS
+	pyodbc
+
+### Raspberry Pi
+	AWS
+	VL53L0X
+	MPG123
+	OpenCV
+	wondershaper
+
+## Internet Throttling
+	sudo wondershaper wlan0 256 128
+	sudo wondershaper clear wlan0

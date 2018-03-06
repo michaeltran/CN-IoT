@@ -1,0 +1,14 @@
+# Ignore Server Stuff
+Server/Log/*
+Server/verify.json
+Server/details.json
+Server/image.json
+Server/add_person.json
+Server/fps.json
+
+# Ignore Raspberry Pi Stuff
+RaspberryPi/Client/Log/*
+RaspberryPi/Client/audio.mp3
+
+# Ignore Python Stuff
+*.pyc

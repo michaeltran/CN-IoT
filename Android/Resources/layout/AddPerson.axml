@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewCamera"
+        android:minHeight="500px" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout1"
+        android:rowCount="4"
+        android:columnCount="2">
+        <TextView
+            android:text="First Name: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewFirstName" />
+        <EditText
+            android:id="@+id/editTextFirstName" />
+        <TextView
+            android:text="Last Name: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewLastName" />
+        <EditText
+            android:id="@+id/editTextLastName" />
+        <TextView
+            android:text="Min Distance: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewMinDistance" />
+        <EditText
+            android:id="@+id/editTextMinDistance" />
+        <TextView
+            android:text="Max Distance: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewMaxDistance" />
+        <EditText
+            android:id="@+id/editTextMaxDistance" />
+    </GridLayout>
+    <Button
+        android:text="Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonAdd" />
+    <Button
+        android:text="Back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonBack" />
+</LinearLayout>
